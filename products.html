@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Categories</title>
+    <style>
+        /* Main Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f9f9f7;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #2E7D32;
+            margin-bottom: 10px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #6b8e23;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Products Grid - Centered Version */
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            width: 100%;
+            max-width: 280px;
+            margin: 0 auto;
+            border: 1px solid #e0e0e0;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+        .product-info {
+            padding: 15px;
+        }
+        .product-info h3 {
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        .product-info p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .products-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Our Products</h1>
+        <a href="webs.html" class="back-link">← Back to Categories</a>
+    </div>
+
+    <!-- Products Container -->
+    <div class="products-container">
+        <!-- Example Product 1 -->
+        <div class="product-card">
+            <img src="https://source.unsplash.com/random/400x300/?tomatoes" alt="Heirloom Tomatoes">
+            <div class="product-info">
+                <h3>Heirloom Tomatoes</h3>
+                <p>Grown organically with rich, complex flavors. Perfect for salads and sauces.</p>
+            </div>
+        </div>
+
+        <!-- Example Product 2 -->
+        <div class="product-card">
+            <img src="https://source.unsplash.com/random/400x300/?carrots" alt="Rainbow Carrots">
+            <div class="product-info">
+                <h3>Rainbow Carrots</h3>
+                <p>Colorful varieties packed with nutrients. Sweet and crunchy!</p>
+            </div>
+        </div>
+
+        <!-- Example Product 3 -->
+        <div class="product-card">
+            <img src="https://source.unsplash.com/random/400x300/?zucchini" alt="Fresh Zucchini">
+            <div class="product-info">
+                <h3>Fresh Zucchini</h3>
+                <p>Tender and versatile for grilling, baking, or spiralizing.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
