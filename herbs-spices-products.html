@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbs & Spices - BERAKOT INVESTMENTS</title>
+    <style>
+        /* Same styles, different color theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: #000;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #1a1a1a;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(76, 175, 80, 0.3);
+            border: 1px solid #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #4CAF50;
+        }
+
+        .header h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            color: #aaa;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #66BB6A;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            background: #2a2a2a;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid #444;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(76, 175, 80, 0.4);
+            border-color: #4CAF50;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #4CAF50;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-info h3 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .product-info .price {
+            color: #4CAF50;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .product-info p {
+            color: #aaa;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .product-features {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .product-features li {
+            color: #ccc;
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .product-features li:before {
+            content: "✓";
+            color: #4CAF50;
+            position: absolute;
+            left: 0;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #43A047 0%, #5CB860 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌿 Herbs & Spices</h1>
+            <p>Nature's Flavor, Bottled Fresh! Hand-picked and carefully dried to preserve their natural essence</p>
+            <a href="webs.html" class="back-link">← Back to Categories</a>
+        </div>
+
+        <div class="products-grid">
+            <!-- Fresh Basil -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1618375569909-3c8616cf3363?w=400&h=300&fit=crop" alt="Fresh Basil">
+                <div class="product-info">
+                    <h3>Fresh Basil</h3>
+                    <div class="price">$2.99/bunch</div>
+                    <p>Aromatic sweet basil perfect for pesto, Italian dishes, and fresh salads.</p>
+                    <ul class="product-features">
+                        <li>Freshly Harvested</li>
+                        <li>Intense Aroma</li>
+                        <li>Versatile Use</li>
+                    </ul>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Rosemary -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1618375569909-3c8616cf3363?w=400&h=300&fit=crop" alt="Rosemary">
+                <div class="product-info">
+                    <h3>Fresh Rosemary</h3>
+                    <div class="price">$3.49/bunch</div>
+                    <p>Woody, aromatic herb perfect for roasting meats and flavoring oils.</p>
+                    <ul class="product-features">
+                        <li>Strong Flavor</li>
+                        <li>Perfect for Roasting</li>
+                        <li>Long Shelf Life</li>
+                    </ul>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Mixed Herb Bundle -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1618375569909-3c8616cf3363?w=400&h=300&fit=crop" alt="Mixed Herbs">
+                <div class="product-info">
+                    <h3>Mixed Herb Bundle</h3>
+                    <div class="price">$6.99/bundle</div>
+                    <p>Assorted fresh herbs including thyme, oregano, sage, and mint.</p>
+                    <ul class="product-features">
+                        <li>Variety Pack</li>
+                        <li>Perfect for Cooking</li>
+                        <li>Fresh Daily</li>
+                    </ul>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Same JavaScript functionality
+        document.querySelector('.back-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            
+            setTimeout(() => {
+                window.location.href = this.href;
+            }, 500);
+        });
+
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const productName = this.closest('.product-card').querySelector('h3').textContent;
+                this.textContent = 'Added! ✓';
+                this.style.background = 'linear-gradient(135deg, #6a5acd 0%, #9370db 100%)';
+                
+                setTimeout(() => {
+                    this.textContent = 'Add to Cart';
+                    this.style.background = 'linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%)';
+                }, 2000);
+                
+                console.log(`Added to cart: ${productName}`);
+            });
+        });
+    </script>
+</body>
+</html>
